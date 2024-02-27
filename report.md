@@ -16,7 +16,6 @@ The onboarding experience with Chart.js was a bit more demanding than for Mockit
 ## Effort spent
 
 For each team member, how much time was spent in
-
 1. plenary discussions/meetings;
 2. discussions within parts of the group;
 3. reading documentation;
@@ -33,46 +32,46 @@ you took care of and where you spent your time, if that time exceeds
 **Anne Haaker**
 
 1. 1.5h
-2. 
-3. 
+2.
+3.
 4. 2h. Chrome: 1.5h
-5. 
-6. 
-7. 
-8. 
+5.
+6.
+7.
+8.
 
 **Alex Gunnarsson**
 
 1. 1.5h
-2. 
-3. 
-4. 30 min (downloading tools, executing tests before changes)
-5. 
-6. 
-7. 
-8. 
+2.
+3.
+4.
+5.
+6.
+7.
+8.
 
 **Hugo Tricot**
 
 1. 1.5h
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
+2.
+3.
+4. 30 min (downloading tools, executing tests before changes)
+5.
+6.
+7.
+8.
 
 **Juan Lavagnini**
 
 1. 1.5h
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
+2.
+3.
+4.
+5.
+6.
+7.
+8.
 
 ## Overview of issue(s) and work done.
 
