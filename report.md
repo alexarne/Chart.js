@@ -32,7 +32,7 @@ you took care of and where you spent your time, if that time exceeds
 
 **Anne Haaker**
 
-1. 1.5h
+1. 2.5h
 2. 
 3. 
 4. 2h. Chrome: 1.5h
@@ -43,7 +43,7 @@ you took care of and where you spent your time, if that time exceeds
 
 **Alex Gunnarsson**
 
-1. 1.5h
+1. 2.5h
 2. 
 3. 
 4. 
@@ -54,18 +54,18 @@ you took care of and where you spent your time, if that time exceeds
 
 **Hugo Tricot**
 
-1. 1.5h
+1. 2.5h
 2. 
-3. 
+3. 30 min (understanding the different aspects of the code and options)
 4. 30 min (downloading tools, executing tests before changes)
-5. 
+5. 30 min (finding the code responsible for the error)
 6. 1h (preparation for issues)
 7. 
 8. 
 
 **Juan Lavagnini**
 
-1. 1.5h
+1. 2.5h
 2. 
 3. 
 4. 
