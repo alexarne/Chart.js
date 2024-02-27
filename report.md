@@ -36,8 +36,8 @@ you took care of and where you spent your time, if that time exceeds
 2. 
 3. 
 4. 2h. Chrome: 1.5h
-5. 
-6. 
+5. 0.5h
+6. 0.5h (report)
 7. 
 8. 
 
@@ -80,9 +80,9 @@ Title: Wrongly positioned bar on the timeline chart (Chart 4.4.1)
 
 [URL](https://github.com/chartjs/Chart.js/issues/11667)
 
-A bar chart of a time line positions the bars for exact dates wrongly relative to the dates on the timeline. In addition, it also visualizes bars for dates that are beyond the min-max values for the timeline.
+The issue concerns a bar chart of a time line, where the bars for exact dates are positioned incorrectly relative to the dates on the timeline. The bars for such data should be centered to the specific date, and not start at that date and continue away from it. In addition, it also visualizes bars for dates that are beyond the min-max values for the timeline.
 
-Scope (functionality and code affected).
+The scope of the issue, regarding functionality and code affected, is vizualisation of bar chart data for data that concerns one exact point. 
 
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
