@@ -82,14 +82,16 @@ module.exports = async function(karma) {
           '--disable-background-timer-throttling',
           '--disable-backgrounding-occluded-windows',
           '--disable-renderer-backgrounding'
-        ]
+        ],
+        binary: '~/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
       },
       firefox: {
         base: 'Firefox',
         prefs: {
           'layers.acceleration.disabled': true,
           'gfx.canvas.accelerated': false
-        }
+        },
+        binary: ''
       },
       safari: {
         base: 'SafariPrivate'
