@@ -104,19 +104,14 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 Overall results with link to a copy or excerpt of the logs (before/after
 refactoring).
 
-In order to solving the issue we decide to add five test cases before to start working on the code. One test focus on check if the bar is centered on the exact date considering if there is a minBarLength specified. The other four test cases had been implemented to check if a exact date or a span out of the range of the chart is not shown. 
+Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view. 
 
-Previus to the changes to code was working like that:
-- Specific dates like `1999-12-31` typed as span `[1999-12-31 - 1999-12-31]` with a small minBarLength had displayed like if this date was after `2000-01-01`. That was because the minimal length was took from the begining to the rigth, and not half to each side.
+Previus to the changes to code was working as follows:
+- Specific dates like `1999-12-31`, typed as span `[1999-12-31 - 1999-12-31]`, were shown as a bar starting from the specific date. For large values on minBarLength compared to the scale of the chart, the bar can be perceived as representing other values. Instead, the bar should be centered to the value (or the span).
 - Specific date but out of range (value < min) was displayed even though it wasn't supposed to be shown.
-- If the minBarLength of a span was larger than the actual span, the span out of range was displayed even though it wasn't supposed to be shown.
+- If the minBarLength of a span was larger than the bar for the actual span, the span out of range was displayed even though it wasn't supposed to be shown.
 
-For being able to see that all the test that was supposed to fail actualy was failing a configuration should be changed:
-
-in `karma.conf.cjs` line 59, should change eventually:
-`stopOnSpecFailure: !!karma.autoWatch`
-And instead add:
-`stopOnSpecFailure: false`
+To make sure all the tests that were supposed to fail were actually failing, a testing configuration was changed in `karma.conf.cjs` on line 59 from `stopOnSpecFailure: !!karma.autoWatch` to `stopOnSpecFailure: false`. 
 
 ## UML class diagram and its description
 
