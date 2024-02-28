@@ -36,9 +36,9 @@ you took care of and where you spent your time, if that time exceeds
 2. 
 3. 
 4. 2h. Chrome: 1.5h
-5. 0.5h
+5. 2h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
-7. 
+7. 1.5h (writing tests)
 8. 
 
 **Alex Gunnarsson**
@@ -68,9 +68,9 @@ you took care of and where you spent your time, if that time exceeds
 2. 
 3. 
 4. 
-5. 
+5. 1.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 
-7. 
+7. 1.5h (writing tests)
 8. 
 
 ## Overview of issue(s) and work done.
@@ -81,7 +81,7 @@ Title: Wrongly positioned bar on the timeline chart (Chart 4.4.1)
 
 The issue concerns a bar chart of a time line, where the bars for exact dates are positioned incorrectly relative to the dates on the timeline. The bars for such data should be centered to the specific date, and not start at that date and continue away from it. In addition, it also visualizes bars for dates that are beyond the min-max values for the timeline.
 
-The scope of the issue, regarding functionality and code affected, is vizualisation of bar chart data for data that concerns one exact point. 
+The scope of the issue, regarding functionality and code affected, is vizualisation of bar chart data for data that concerns one exact point, as well as data that is outside of the given range for the bar chart. 
 
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
