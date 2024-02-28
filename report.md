@@ -56,12 +56,11 @@ you took care of and where you spent your time, if that time exceeds
 
 1. 2.5h
 2. 
-3. 30 min (understanding the different aspects of the code and options)
+3. 2.5h (0.5h understanding the different aspects of the code and options; 2h finding relevnt classes, fields and methods for the UML class diagram)
 4. 30 min (downloading tools, executing tests before changes)
 5. 30 min (finding the code responsible for the error)
-6. 1h (preparation for issues)
+6. 
 7. 
-8. 
 
 **Juan Lavagnini**
 
