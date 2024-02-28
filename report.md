@@ -115,6 +115,12 @@ To make sure all the tests that were supposed to fail were actually failing, a t
 
 ## UML class diagram and its description
 
+![UML class diagram](/home/tricot/Documents/HDD/Documents/Études/KTH/Cours/Spring%20semester%202024/DD2480%20Software%20Engineering%20Fundamentals/Assignment%204/Chart.js/report_assets/UML%20diagram.jpg)
+
+The main issue appears in the BarController class, private method \_calculateBarValuePixels(), which computes the length of the bars, including when the option `minBarLength` is set. It is itself called by the updateElements() method.
+
+The general workflow of Chart.js is to create a Chart object controlled by a class extending DatasetController, such as BarController (custom dataset controllers can be made). The data to be modelized is managed by the Config class, in its `data` field. The charts use the Scale class and its children to handle the scales of the charts, and to get the pixel place for an element given as parameter of the Scale classes element. 
+
 ### Key changes/classes affected
 
 Optional (point 1): Architectural overview.
