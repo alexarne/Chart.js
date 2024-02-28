@@ -56,7 +56,8 @@ module.exports = async function(karma) {
 
     client: {
       jasmine: {
-        stopOnSpecFailure: !!karma.autoWatch
+        stopOnSpecFailure: false
+        //stopOnSpecFailure: !!karma.autoWatch,
       }
     },
 
