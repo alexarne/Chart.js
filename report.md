@@ -85,7 +85,25 @@ The scope of the issue, regarding functionality and code affected, is vizualisat
 
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
+There was no requirement explicitly defined other than **#1**, which has been refined to improve the definition. The other requirements are either extracted from tests (**#2**, **#3**, and the refinement of **#1**) of from the issue (**#4**, **#5**).
+
+| Id     | Title                                                    | Description                                                                                                                                                                         |
+| ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **#1** | Size is at least minBarLength                            | The size of the bar in a barchart is at least the value of minBarLength in pixels if the option is set to a positive value, whether the bar represents negative or positive values. |
+| **#2** | Size is at most the maximum of the span and minBarLength | The size of the bar in a barchart is at most the maximum between the value of the span and minBarLength.                                                                            |
+| **#3** | No overlaps in stacked bars with minBarLength            | In the case of a barchart with stacked bars and the minBarLength option is set, the bars should not overlap.                                                                        |
+| **#4** | Centered unique dates                                    | If the barchart represent dates, the bars for a single day should be centered around the date.                                                                                      |
+| **#5** | Bar out of range not shown                               | A bar that represent a value out of range should not be displayed. If only a fraction of the bar is in the range (possibly due to minBarLength), only this fraction is displayed.   |
+
 Optional (point 3): trace tests to requirements.
+
+- **#1** and **#2**: `horizontal-neg`, `horizontal-pos`, `horizontal`, `vertical-neg`, `vertical-pos`, `vertical`
+
+- **#3**: `horizontal-stacked-no-overlap`, `vertical-stacked-no-overlap`
+
+- **#4**: `bar-centered`
+
+- **#5**: `bar-hide-above-range`, `bar-hide-below-range`, `bar-span-big-hide-out-of-range`, `bar-span-small-hide-out-of-range`
 
 ## Code changes
 
