@@ -55,12 +55,25 @@ you took care of and where you spent your time, if that time exceeds
 **Hugo Tricot**
 
 1. 2.5h
+   - 1.5h searching in group for project and issue
+   
+   - 1h dividing tasks
 2. 
-3. 2.5h (0.5h understanding the different aspects of the code and options; 2h finding relevnt classes, fields and methods for the UML class diagram)
+3. 2h
+   - 0.5h understanding the different aspects of the code and options
+   
+   - 1h finding relevent classes, fields and methods for the UML class diagram)
 4. 30 min (downloading tools, executing tests before changes)
-5. 30 min (finding the code responsible for the error)
-6. 
-7. 
+5. 1h
+   - 30 min finding the code responsible for the error
+   
+   - 30 min looking at tests to identify requirements
+6.  2h
+   - 1h writing UML class diagram
+   
+   - 1h writing requirements and tracing them to tests
+7.  
+8. 
 
 **Juan Lavagnini**
 
@@ -125,6 +138,7 @@ refactoring).
 Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view. 
 
 Previus to the changes to code was working as follows:
+
 - Specific dates like `1999-12-31`, typed as span `[1999-12-31 - 1999-12-31]`, were shown as a bar starting from the specific date. For large values on minBarLength compared to the scale of the chart, the bar can be perceived as representing other values. Instead, the bar should be centered to the value (or the span).
 - Specific date but out of range (value < min) was displayed even though it wasn't supposed to be shown.
 - If the minBarLength of a span was larger than the bar for the actual span, the span out of range was displayed even though it wasn't supposed to be shown.
