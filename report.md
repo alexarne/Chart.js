@@ -33,58 +33,69 @@ you took care of and where you spent your time, if that time exceeds
 **Anne Haaker**
 
 1. 2.5h
-2. 
+2.
 3. 0.5h (reading documentation specific for testing)
 4. 2h. Chrome: 1.5h
 5. 2h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
 7. 1.5h (writing tests)
-8. 
+8.
 
 **Alex Gunnarsson**
 
 1. 2.5h
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
+2.
+3.
+4.
+5.
+6.
+7.
+8.
 
 **Hugo Tricot**
 
 1. 2.5h
+
    - 1.5h searching in group for project and issue
-   
+
    - 1h dividing tasks
-2. 
+
+2.
+
 3. 2h
+
    - 0.5h understanding the different aspects of the code and options
-   
+
    - 1h finding relevent classes, fields and methods for the UML class diagram)
+
 4. 30 min (downloading tools, executing tests before changes)
+
 5. 1h
+
    - 30 min finding the code responsible for the error
-   
+
    - 30 min looking at tests to identify requirements
-6.  2h
+
+6. 2h
+
    - 1h writing UML class diagram
-   
+
    - 1h writing requirements and tracing them to tests
-7.  
-8. 
+
+7.
+
+8.
 
 **Juan Lavagnini**
 
 1. 2.5h
-2. 
+2.
 3. 0.5h (reading documentation specific for testing)
 4. 2h (Firefox was causing some troubles)
 5. 1.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report, tests)
 7. 1.5h (writing tests)
-8. 
+8.
 
 ## Overview of issue(s) and work done.
 
@@ -94,7 +105,7 @@ Title: Wrongly positioned bar on the timeline chart (Chart 4.4.1)
 
 The issue concerns a bar chart of a time line, where the bars for exact dates are positioned incorrectly relative to the dates on the timeline. The bars for such data should be centered to the specific date, and not start at that date and continue away from it. In addition, it also visualizes bars for dates that are beyond the min-max values for the timeline.
 
-The scope of the issue, regarding functionality and code affected, is vizualisation of bar chart data for data that concerns one exact point, as well as data that is outside of the given range for the bar chart. 
+The scope of the issue, regarding functionality and code affected, is vizualisation of bar chart data for data that concerns one exact point, as well as data that is outside of the given range for the bar chart.
 
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
@@ -135,7 +146,7 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 Overall results with link to a copy or excerpt of the logs (before/after
 refactoring).
 
-Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view. 
+Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view.
 
 Previus to the changes to code was working as follows:
 
@@ -143,15 +154,15 @@ Previus to the changes to code was working as follows:
 - Specific date but out of range (value < min) was displayed even though it wasn't supposed to be shown.
 - If the minBarLength of a span was larger than the bar for the actual span, the span out of range was displayed even though it wasn't supposed to be shown.
 
-To make sure all the tests that were supposed to fail were actually failing, a testing configuration was changed in `karma.conf.cjs` on line 59 from `stopOnSpecFailure: !!karma.autoWatch` to `stopOnSpecFailure: false`. 
+To make sure all the tests that were supposed to fail were actually failing, a testing configuration was changed in `karma.conf.cjs` on line 59 from `stopOnSpecFailure: !!karma.autoWatch` to `stopOnSpecFailure: false`.
 
 ## UML class diagram and its description
 
-![UML class diagram](/home/tricot/Documents/HDD/Documents/Études/KTH/Cours/Spring%20semester%202024/DD2480%20Software%20Engineering%20Fundamentals/Assignment%204/Chart.js/report_assets/UML%20diagram.jpg)
+![UML class diagram](./report_assets/UML%20diagram.jpg)
 
 The main issue appears in the BarController class, private method \_calculateBarValuePixels(), which computes the length of the bars, including when the option `minBarLength` is set. It is itself called by the updateElements() method.
 
-The general workflow of Chart.js is to create a Chart object controlled by a class extending DatasetController, such as BarController (custom dataset controllers can be made). The data to be modelized is managed by the Config class, in its `data` field. The charts use the Scale class and its children to handle the scales of the charts, and to get the pixel place for an element given as parameter of the Scale classes element. 
+The general workflow of Chart.js is to create a Chart object controlled by a class extending DatasetController, such as BarController (custom dataset controllers can be made). The data to be modelized is managed by the Config class, in its `data` field. The charts use the Scale class and its children to handle the scales of the charts, and to get the pixel place for an element given as parameter of the Scale classes element.
 
 ### Key changes/classes affected
 
