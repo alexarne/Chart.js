@@ -33,18 +33,18 @@ you took care of and where you spent your time, if that time exceeds
 **Anne Haaker**
 
 1. 2.5h
-2. 
+2. 1h
 3. 0.5h (reading documentation specific for testing)
 4. 2h. Chrome: 1.5h
-5. 2h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
+5. 3.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
-7. 1.5h (writing tests)
+7. 3h (writing tests)
 8. 
 
 **Alex Gunnarsson**
 
 1. 2.5h
-2. 
+2. 1h
 3. 
 4. 
 5. 
