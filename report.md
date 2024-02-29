@@ -107,6 +107,7 @@ refactoring).
 Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view. 
 
 Previus to the changes to code was working as follows:
+
 - Specific dates like `1999-12-31`, typed as span `[1999-12-31 - 1999-12-31]`, were shown as a bar starting from the specific date. For large values on minBarLength compared to the scale of the chart, the bar can be perceived as representing other values. Instead, the bar should be centered to the value (or the span).
 - Specific date but out of range (value < min) was displayed even though it wasn't supposed to be shown.
 - If the minBarLength of a span was larger than the bar for the actual span, the span out of range was displayed even though it wasn't supposed to be shown.
@@ -126,6 +127,8 @@ Optional (point 2): relation to design pattern(s).
 What are your main take-aways from this project? What did you learn?
 
 How did you grow as a team, using the Essence standard to evaluate yourself?
+
+We believe our team is currently in the *Performing* state. We have been able to change from Mockito, the project on which we worked on for assignment 3 to Chart.js for which we found a suitable issue in short order, with meetings for the setup and initial tasks allocation. We also adapted to the changes in how we view the requirements as new behaviours to be considered appear. For the first assignment we considered ourselves in the *In place* category and mentioned we still lacked experience on the tools to be more efficient. Through the course we gained this experience and we now use them efficiently without thinking about it. In the second assignment we placed ourselves between the *Collaborating* and *Performing* states, with both planning and independent work preparation being our problems. For this last assignment we planned setup meetings so that everyone could work properly from the beginning and so that we are clear between ourselves. This is the same obstacle that we faced in assignment 3 and overcame this time.
 
 Optional (point 6): How would you put your work in context with best software
 engineering practice?
