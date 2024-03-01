@@ -107,6 +107,7 @@ refactoring).
 Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view. 
 
 Previus to the changes to code was working as follows:
+
 - Specific dates like `1999-12-31`, typed as span `[1999-12-31 - 1999-12-31]`, were shown as a bar starting from the specific date. For large values on minBarLength compared to the scale of the chart, the bar can be perceived as representing other values. Instead, the bar should be centered to the value (or the span).
 - Specific date but out of range (value < min) was displayed even though it wasn't supposed to be shown.
 - If the minBarLength of a span was larger than the bar for the actual span, the span out of range was displayed even though it wasn't supposed to be shown.
@@ -127,7 +128,11 @@ What are your main take-aways from this project? What did you learn?
 
 How did you grow as a team, using the Essence standard to evaluate yourself?
 
+We believe our team is currently in the *Performing* state. We have been able to change from Mockito, the project on which we worked on for assignment 3 to Chart.js for which we found a suitable issue in short order, with meetings for the setup and initial tasks allocation. We also adapted to the changes in how we view the requirements as new behaviours to be considered appear. For the first assignment we considered ourselves in the *In place* category and mentioned we still lacked experience on the tools to be more efficient. Through the course we gained this experience and we now use them efficiently without thinking about it. In the second assignment we placed ourselves between the *Collaborating* and *Performing* states, with both planning and independent work preparation being our problems. For this last assignment we planned setup meetings so that everyone could work properly from the beginning and so that we are clear between ourselves. This is the same obstacle that we faced in assignment 3 and overcame this time. With the end of the course we will finally reach the state *Adjourned*.
+
 Optional (point 6): How would you put your work in context with best software
 engineering practice?
+
+We believe to be in the *Under control* state of the Work Alpha, following the SEMAT kernel. Most points before this state are either covered by the assignment instructions or are non-applicable (e.g. there is no budget, and the resources only concern the amount of time we can dedicate to work on this project). One point in the *Under control* state is not fully achieved: "Estimates are revised to reflect the team’s performance.", this is in part due to the fact that we have not enough time nor much more work to do on this assignment to revise the estimated work to be done. Overall our methods to work could be evolved into an agile framework such as SCRUM with sprints of one week, we effectively had our sprint planning (carried out in two parts) with our first meetings, daily updates on how our work is carrying on, defined tasks and we usually make a small meeting to end our assignments before the presentation, which can be thought as a sprint review. We would mostly need to define a SCRUM master and a Product Owner to be fully using this framework. When it comes to work, our methods worked well with the limited scope and available time of the assignments, but on larger project we would need to think collectively of the architecture of our projects, and the best software engineering practice to structure and carry out the work, such as design patterns.
 
 Optional (point 7): Is there something special you want to mention here?
