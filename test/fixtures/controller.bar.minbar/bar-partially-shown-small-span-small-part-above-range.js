@@ -4,7 +4,7 @@ module.exports = {
       data: {
         datasets: [{
           data: [{
-            x: ['2004-12-18', '2005-01-01'], //01-05
+            x: ['2004-12-18', '2005-01-05'],
             y: '',
           }],
           backgroundColor: ['green'],
