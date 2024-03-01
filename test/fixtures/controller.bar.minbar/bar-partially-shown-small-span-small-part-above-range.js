@@ -4,12 +4,12 @@ module.exports = {
       data: {
         datasets: [{
           data: [{
-            x: ['2004-12-23', '2005-01-03'],
+            x: ['2004-12-18', '2005-01-01'], //01-05
             y: '',
           }],
           backgroundColor: ['green'],
           barPercentage: 1,
-          minBarLength: 20,
+          minBarLength: 15,
         },
         ],
       },
