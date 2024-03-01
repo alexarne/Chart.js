@@ -33,53 +33,53 @@ you took care of and where you spent your time, if that time exceeds
 **Anne Haaker**
 
 1. 2.5h
-2.
+2. 
 3. 0.5h (reading documentation specific for testing)
 4. 2h. Chrome: 1.5h
 5. 2h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
 7. 1.5h (writing tests)
-8.
+8. 
 
 **Alex Gunnarsson**
 
 1. 2.5h
-2.
-3.
-4.
-5.
-6.
-7.
-8.
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
 
 **Hugo Tricot**
 
 1. 2.5h
-
+   
    - 1.5h searching in group for project and issue
-
+   
    - 1h dividing tasks
 
 2.
 
 3. 2h
-
+   
    - 0.5h understanding the different aspects of the code and options
-
+   
    - 1h finding relevent classes, fields and methods for the UML class diagram)
 
 4. 30 min (downloading tools, executing tests before changes)
 
 5. 1h
-
+   
    - 30 min finding the code responsible for the error
-
+   
    - 30 min looking at tests to identify requirements
 
 6. 2h
-
+   
    - 1h writing UML class diagram
-
+   
    - 1h writing requirements and tracing them to tests
 
 7.
@@ -89,13 +89,13 @@ you took care of and where you spent your time, if that time exceeds
 **Juan Lavagnini**
 
 1. 2.5h
-2.
+2. 
 3. 0.5h (reading documentation specific for testing)
 4. 2h (Firefox was causing some troubles)
 5. 1.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report, tests)
 7. 1.5h (writing tests)
-8.
+8. 
 
 ## Overview of issue(s) and work done.
 
@@ -125,9 +125,11 @@ Optional (point 3): trace tests to requirements.
 
 - **#3**: `horizontal-stacked-no-overlap`, `vertical-stacked-no-overlap`
 
-- **#4**: `bar-centered`
+- **#4**: `bar-centered`, `bar-partially-shown-on-lower-bound`, `bar-partially-shown-on-upper-bound`, `codepen`
 
-- **#5**: `bar-hide-above-range`, `bar-hide-below-range`, `bar-span-big-hide-out-of-range`, `bar-span-small-hide-out-of-range`
+- **#5**: `bar-hide-far-above-range`, `bar-hide-far-below-range`, `bar-partially-shown-on-lower-bound`, `bar-partially-shown-on-upper-bound`, `bar-partially-shown-small-span-partially-above-range`, `bar-partially-shown-small-span-partially-below-range`, `bar-partially-shown-small-span-small-part-below-range`, `bar-partially-shown-span-partially-above-range`, `bar-partially-shown-span-partially-below-range`, `bar-span-big-hide-out-of-range`, `bar-span-small-hide-out-of-range`, `codepen`
+
+The high number of tests for requirement **#5** reflects the number of possible behaviour we identified. The `codepen` test is the expected behaviour of the code snippet provided by the author of the [issue](https://github.com/chartjs/Chart.js/issues/11667), which can be compared to the [original codepen](https://codepen.io/BabSick/pen/yLwQKQg) with incorrect behaviour.
 
 ## Code changes
 
