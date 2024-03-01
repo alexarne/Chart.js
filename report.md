@@ -38,7 +38,7 @@ you took care of and where you spent your time, if that time exceeds
 4. 2h. Chrome: 1.5h
 5. 3.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
-7. 3h (writing tests)
+7. 4.5h (writing tests)
 8. 
 
 **Alex Gunnarsson**
