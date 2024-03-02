@@ -32,12 +32,12 @@ you took care of and where you spent your time, if that time exceeds
 **Anne Haaker**
 
 1. 2.5h
-2. 
+2. 1h
 3. 0.5h (reading documentation specific for testing)
 4. 2h. Chrome: 1.5h
-5. 2h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
+5. 3.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
-7. 1.5h (writing tests)
+7. 4.5h (writing tests)
 8. 
 
 Total: 9h
@@ -187,23 +187,58 @@ Optional (point 2): relation to design pattern(s).
 
 ## Overall experience
 
-*What are your main take-aways from this project? What did you learn?*
+**What are your main take-aways from this project? What did you learn?**
 
 To dive into the code and identify its components in order to provide a solution. Also, to engineer requirements in order to satisfy the given issue, sometimes not exactly as it was intended since some aspects are up for interpretation. 
 
-*How did you grow as a team, using the Essence standard to evaluate yourself?*
+**How did you grow as a team, using the Essence standard to evaluate yourself?**
 
 
-
-*Optional (point 6): How would you put your work in context with best software engineering practice?*
-
+We believe our team is currently in the *Performing* state. We have been able to change from Mockito, the project on which we worked on for assignment 3 to Chart.js for which we found a suitable issue in short order, with meetings for the setup and initial tasks allocation. We also adapted to the changes in how we view the requirements as new behaviours to be considered appear. For the first assignment we considered ourselves in the *In place* category and mentioned we still lacked experience on the tools to be more efficient. Through the course we gained this experience and we now use them efficiently without thinking about it. In the second assignment we placed ourselves between the *Collaborating* and *Performing* states, with both planning and independent work preparation being our problems. For this last assignment we planned setup meetings so that everyone could work properly from the beginning and so that we are clear between ourselves. This is the same obstacle that we faced in assignment 3 and overcame this time. With the end of the course we will finally reach the state *Adjourned*.
 
 
-*Optional (point 7): Is there something special you want to mention here?*
+**Optional (point 6): How would you put your work in context with best software engineering practice?**
+
+
+We believe to be in the *Under control* state of the Work Alpha, following the SEMAT kernel. Most points before this state are either covered by the assignment instructions or are non-applicable (e.g. there is no budget, and the resources only concern the amount of time we can dedicate to work on this project). One point in the *Under control* state is not fully achieved: "Estimates are revised to reflect the team’s performance.", this is in part due to the fact that we have not enough time nor much more work to do on this assignment to revise the estimated work to be done. Overall our methods to work could be evolved into an agile framework such as SCRUM with sprints of one week, we effectively had our sprint planning (carried out in two parts) with our first meetings, daily updates on how our work is carrying on, defined tasks and we usually make a small meeting to end our assignments before the presentation, which can be thought as a sprint review. We would mostly need to define a SCRUM master and a Product Owner to be fully using this framework. When it comes to work, our methods worked well with the limited scope and available time of the assignments, but on larger project we would need to think collectively of the architecture of our projects, and the best software engineering practice to structure and carry out the work, such as design patterns.
+
+
+**Optional (point 7): Is there something special you want to mention here?**
 
 
 
 # P+ Point 8
 
-*In the context of Jonas Öberg's lecture last week, where do you put the project that you have chosen in an ecosystem of open-source and closed-source software? Is your project (as it is now) something that has replaced or can replace similar proprietary software? Why (not)?*
+**In the context of Jonas Öberg's lecture last week, where do you put the project that you have chosen in an ecosystem of open-source and closed-source software? Is your project (as it is now) something that has replaced or can replace similar proprietary software? Why (not)?**
+
+We have found no mention of proprietary software being replaced by Chart.js. This is porbably due to the private aspect of proprietary software company . On the other hand we found reasons to believe the project can replace legacy software as explained by Jonas Öberg's guest lecture:
+
+- Chart.js has adapters for most well-known JavaScript frameworks such as Angular, React, Vue.js, SolidJs, and more. There are also some adapters for other languages such as Python or Java (for the latter, not all versions of Chart.js are supported).
+
+- Chart.js uses a system of plugins to fine-tune the charts. The community has made a number of custom plugins that are listed [here](https://github.com/chartjs/awesome) (non-exhaustive). Proprietary software companies can also create their own custom plugins to tune their charts and would only need to maintain said custom plugins, instead of a whole legacy code brick. These plugins could even be trending features that drive sales.
+
+- The community is large and the project widely-used, with between 2,700,000 and 3,300,00 weekly downloads over the last year. The project also has 63k GitHub stars at the time of writing.
+
+- The project is under the MIT license, which is very permissive and allow commercial use for example. Most of the published plugins are also under the MIT license.
+
+We also found a handful of open-source and closed-source alternatives, and will list here those who seem to be the most competitive:
+
+- [ShieldUI](https://www.shieldui.com/) is a proprietary framework that offers a large number of charts and wrappers for the .NET framework. It also boasts chart combining.
+
+- [AnyChart](https://www.anychart.com/products/anychart/overview/) is a flexible and extensive chart framework that does not rely on other js libraries such as jQuery and has been available for a long time.
+
+- KoolChart is another proprietary framework with the highest amount of available charts of the framework listed here. It is als easy to use.
+
+- [d3.js](https://d3js.org/) is an open-source framework with a large community boasting beautiful diagrams. Although a large number of examples is available online, its main drawback is the steep learning curve. Available under ISV license (very close to MIT).
+
+- [Chartist](https://github.com/chartist-js/chartist) is a minimal charting library built with SVG and published under the MIT and  WTFPL-2 licenses. It has a limited number of charts and options but offers responsive charts on a lightweight solution.
+
+ShieldUI, AnyChart and KoolChart give more options than Chart.js but are expensive. d3.js is harder to use but offers more options without having to add more code, while Chartist is a much simpler option with less choice but an easier learning curve.
+
+As a conclusion, we believe Chart.js is amply capable of replacing proprietary software. Other open-source frameworks exist and offer more options with a steeper learning curve or les options with a light framework. Chart.js' plugins can enable it to be improved for proprietary use with little maintaining to be done by companies.
+
+
+
+
+
 
