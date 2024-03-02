@@ -10,8 +10,7 @@ The project a javascript library that provides functionality to create highly cu
 
 ## Onboarding experience
 
-We chose a new project, since we had trouble finding reasonable issues to work in in our previous project, Mockito.
-The onboarding experience with Chart.js was a bit more demanding than for Mockito. It required downloading pnpm, which did not cause much trouble. However, several of the team members had trouble building the project and running the tests, since it runs the tests in both Google Chrome and Firefox. If none of those are downloaded on the machine running the tests, the all tests will fail. For the members using WSL, there was some trouble with finding the correct binaries from the underlying windows OS, as well as some trouble with the browser crashing if it was already running before running the tests.
+We chose a new project, since we had trouble finding reasonable issues to work in in our previous project, Mockito. Chart.js uses `pnpm` for easy, one-line configurations and automatic dependency resolution. However, their choice of testing framework revolves around comparing pixel values in image outputs, which caused significant trouble for all members where it was either working on Chrome but not Firefox, or the other way around, and was overall inconsistent with no documentation acknowledging this. Issues included errors if the browser was open prior to testing, if the browser was interacted with during testing, if either Chrome or Firefox was not installed, or if the Chrome binary was not configured as a WSL environment variable.
 
 ## Effort spent
 
@@ -41,16 +40,20 @@ you took care of and where you spent your time, if that time exceeds
 7. 1.5h (writing tests)
 8. 
 
+Total: 9h
+
 **Alex Gunnarsson**
 
 1. 2.5h
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
+2. 0.5h
+3. 2h
+4. 3h
+5. 6h
+6. 1h
+7. 4h
+8. 1h
+
+Total: 20h
 
 **Hugo Tricot**
 
@@ -86,6 +89,8 @@ you took care of and where you spent your time, if that time exceeds
 
 8.
 
+Total: 8h
+
 **Juan Lavagnini**
 
 1. 2.5h
@@ -96,6 +101,8 @@ you took care of and where you spent your time, if that time exceeds
 6. 0.5h (report, tests)
 7. 1.5h (writing tests)
 8. 
+
+Total: 8.5h
 
 ## Overview of issue(s) and work done.
 
@@ -139,7 +146,7 @@ The high number of tests for requirement **#5** reflects the number of possible 
 
 git diff ...
 
-Optional (point 4): the patch is clean.
+Optional (point 4): the patch is clean. It is.
 
 Optional (point 5): considered for acceptance (passes all automated checks).
 
@@ -148,7 +155,11 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 Overall results with link to a copy or excerpt of the logs (before/after
 refactoring).
 
-Five tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. The other four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view.
+[Before](./logs-before.png)
+
+[After](./logs-after.txt)
+
+Multiple tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. Four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view.
 
 Previus to the changes to code was working as follows:
 
@@ -172,13 +183,27 @@ Optional (point 1): Architectural overview.
 
 Optional (point 2): relation to design pattern(s).
 
+
+
 ## Overall experience
 
-What are your main take-aways from this project? What did you learn?
+*What are your main take-aways from this project? What did you learn?*
 
-How did you grow as a team, using the Essence standard to evaluate yourself?
+To dive into the code and identify its components in order to provide a solution. Also, to engineer requirements in order to satisfy the given issue, sometimes not exactly as it was intended since some aspects are up for interpretation. 
 
-Optional (point 6): How would you put your work in context with best software
-engineering practice?
+*How did you grow as a team, using the Essence standard to evaluate yourself?*
 
-Optional (point 7): Is there something special you want to mention here?
+
+
+*Optional (point 6): How would you put your work in context with best software engineering practice?*
+
+
+
+*Optional (point 7): Is there something special you want to mention here?*
+
+
+
+# P+ Point 8
+
+*In the context of Jonas Öberg's lecture last week, where do you put the project that you have chosen in an ecosystem of open-source and closed-source software? Is your project (as it is now) something that has replaced or can replace similar proprietary software? Why (not)?*
+
