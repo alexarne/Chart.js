@@ -69,7 +69,7 @@ Total: 20h
    
    - 0.5h understanding the different aspects of the code and options
    
-   - 1h finding relevent classes, fields and methods for the UML class diagram)
+   - 1h finding relevent classes, fields and methods for the UML class diagram
 
 4. 30 min (downloading tools, executing tests before changes)
 
@@ -94,15 +94,15 @@ Total: 8h
 **Juan Lavagnini**
 
 1. 2.5h
-2. 
-3. 0.5h (reading documentation specific for testing)
-4. 2h (Firefox was causing some troubles)
-5. 1.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
+2. 1.5h
+3. 1.5h (reading documentation specific for testing)
+4. 2.5h (Firefox was causing some troubles)
+5. 2.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report, tests)
 7. 1.5h (writing tests)
-8. 
+8. 1h
 
-Total: 8.5h
+Total: 13.5h
 
 ## Overview of issue(s) and work done.
 
