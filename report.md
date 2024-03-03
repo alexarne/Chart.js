@@ -97,7 +97,7 @@ Total: 20h
    
    - 
 
-8. 30 min checking test outputs on Linux+Firefox
+7. 30 min checking test outputs on Linux+Firefox
 
 Total: 11h
 
@@ -189,7 +189,15 @@ The general workflow of Chart.js is to create a Chart object controlled by a cla
 
 ### Key changes/classes affected
 
-Optional (point 1): Architectural overview.
+**Optional (point 1): Architectural overview.**
+
+![Packages](./report_assets/Packages-diagram.jpg)
+
+The architecture of the project can be presented in different manners. Above is a representation of the packages of the project, and so its *structural* architeture.
+
+![Architecture overview](./report_assets/Architecture%20diagram.jpg)
+
+An other way to present the architecture of the project is to show the relations between the different parts of the code. The diagram is a synthesis of the real project, as many implementation classes (for example the different kinds of scales) are hidden. The changes of the issue we have worked on is *BarController*. The chart is made of 4 main components, the chart itself, which uses the other components; the dataset controller that handles the data it is provided with; the scales that the chart has; and the animation it uses. The dataset controller is refined for specific applications such as *BarController* which is an implementation dedicated to a barchart. The dataset controller is also the one to manage the different visual elements. Plugins, either built-in or custom can be used to customize the charts. They connect to the different hooks of the chart (of which a detailed and graphical list can be found in [the project's documentation](./docs/developers/plugins.md)) and interfere with it during event handling. Hooks can be local (for a single chart) or registered globally so that all charts may use it.
 
 Optional (point 2): relation to design pattern(s).
 
