@@ -157,7 +157,7 @@ refactoring).
 
 [Before](./logs-before.png)
 
-[After](./logs-after.txt)
+[After](./logs-after.png)
 
 Multiple tests were added. One test focuses on checking if the bar is centered on the exact date considering if minBarLength is specified. Four test cases were implemented to check if a bar corresponding to a date or a span of dates that is out of range of the chart is hidden from view.
 
