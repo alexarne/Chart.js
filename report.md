@@ -154,7 +154,7 @@ The high number of tests for requirement **#5** reflects the number of possible 
 
 (copy your changes or the add git command to show them)
 
-git diff ...
+git diff 4068bd8c
 
 Optional (point 4): the patch is clean. It is.
 
