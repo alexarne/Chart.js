@@ -40,7 +40,7 @@ you took care of and where you spent your time, if that time exceeds
 7. 6h (writing tests, refactoring)
 8. 1h
 
-Total: 9h
+Total: 14.5h
 
 **Alex Gunnarsson**
 
@@ -107,12 +107,12 @@ Total: 11h
 2. 1.5h
 3. 1.5h (reading documentation specific for testing)
 4. 2.5h (Firefox was causing some troubles)
-5. 2.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
+5. 3.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report, tests)
-7. 1.5h (writing tests)
+7. 3.5h (writing tests)
 8. 1h
 
-Total: 13.5h
+Total: 16.5h
 
 ## Overview of issue(s) and work done.
 
