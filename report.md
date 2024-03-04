@@ -37,10 +37,10 @@ you took care of and where you spent your time, if that time exceeds
 4. 2h. Chrome: 1.5h
 5. 4h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
-7. 6h (writing tests, refactoring)
-8. 1h
+7. 7h (writing tests, refactoring)
+8. 2h
 
-Total: 14.5h
+Total: 19.5h
 
 **Alex Gunnarsson**
 
@@ -63,9 +63,9 @@ Total: 20h
    
    - 1h dividing tasks
 
-2- 
+2- 30 min
 
-3. 3.25h
+3. 4h
    
    - 30 min understanding the different aspects of the code and options
    
@@ -74,6 +74,8 @@ Total: 20h
    - 30 min reading documentation for essence standard
    
    - 45 min Internet browsing for the project's environment
+   
+   - 45 min architecutre
 
 4. 30 min (downloading tools, executing tests before changes)
 
@@ -85,7 +87,7 @@ Total: 20h
    
    - 30 min analyzing new tests to update requirements
 
-6. 3h
+6. 3.5h
    
    - 1h writing UML class diagram
    
@@ -95,11 +97,13 @@ Total: 20h
    
    - 30 min writing about the open and closed-source ecosystem of the project
    
-   - 
+   - 1.5h architecture
 
-7. 30 min checking test outputs on Linux+Firefox
+7- 1h
 
-Total: 11h
+8. 2h checking test outputs on Linux+Firefox
+
+Total: 14.5h
 
 **Juan Lavagnini**
 
@@ -154,7 +158,7 @@ The high number of tests for requirement **#5** reflects the number of possible 
 
 (copy your changes or the add git command to show them)
 
-git diff 4068bd8c
+git diff 4068bd8c^..965c3803
 
 Optional (point 4): the patch is clean. It is.
 
