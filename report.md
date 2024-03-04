@@ -35,10 +35,10 @@ you took care of and where you spent your time, if that time exceeds
 2. 1h
 3. 0.5h (reading documentation specific for testing)
 4. 2h. Chrome: 1.5h
-5. 3.5h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
+5. 4h (understanding how tests are created, finding which requirements are not tested, analyze output from tests)
 6. 0.5h (report)
-7. 5.5h (writing tests, refactoring)
-8. 
+7. 6h (writing tests, refactoring)
+8. 1h
 
 Total: 9h
 
